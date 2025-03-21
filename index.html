@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://widgets.gc.com/static/js/sdk.v1.js"></script>
     <title>NCLL Scores</title>
     <style>
         html, body {
@@ -12,9 +11,17 @@
         #gc-scoreboard-widget-bf2t {
             height: 100%;
         }
+        .ScoreboardList__scoreboardList {
+            display: ruby !important;
+            margin: 0;
+            padding: 1rem;
+        }
     </style>
 </head>
 <body>
+    <div id="gc-scoreboard-widget-bf2t"></div>
+
+    <script src="https://widgets.gc.com/static/js/sdk.v1.js"></script>
     <script>
         window.GC.scoreboard.init({
             target: "#gc-scoreboard-widget-bf2t",
@@ -22,16 +29,5 @@
             maxVerticalGamesVisible: 4,
         })
     </script>
-    <div id="gc-scoreboard-widget-bf2t"></div>
-
-
-<style>
-  .ScoreboardList__scoreboardList {
-      display: ruby;
-      margin: 0;
-      padding: 1rem;
-  }
-</style>
-
 </body>
 </html>
