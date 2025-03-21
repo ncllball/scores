@@ -11,11 +11,7 @@
         #gc-scoreboard-widget-bf2t {
             height: 100%;
         }
-        .ScoreboardList__scoreboardList {
-            display: ruby !important;
-            margin: 0;
-            padding: 1rem;
-        }
+
     </style>
 </head>
 <body>
@@ -29,15 +25,16 @@
             maxVerticalGamesVisible: 4,
         })
     </script>
+
     <script>
         window.onload = function(){
-      let scoreboard = document.querySelector(".ScoreboardList__scoreboardList");
-      if(scoreboard){
-          scoreboard.style.display = "ruby";
-          scoreboard.style.margin = "0";
-          scoreboard.style.padding = "1rem";
-      }
-  }
+            let scoreboard = document.querySelector(".ScoreboardList__scoreboardList");
+            if(scoreboard){
+                scoreboard.style.display = "ruby";
+                scoreboard.style.margin = "0";
+                scoreboard.style.padding = "1rem";
+            }
+        }
     </script>
 </body>
 </html>
