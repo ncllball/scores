@@ -29,20 +29,15 @@
             maxVerticalGamesVisible: 4,
         })
     </script>
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        #gc-scoreboard-widget-bf2t {
-            height: 100%;
-        }
-        .ScoreboardList__scoreboardList {
-            display: ruby !important;
-            margin: 0;
-            padding: 1rem;
-        }
-    </style>
+    <script>
+        window.onload = function(){
+      let scoreboard = document.querySelector(".ScoreboardList__scoreboardList");
+      if(scoreboard){
+          scoreboard.style.display = "ruby";
+          scoreboard.style.margin = "0";
+          scoreboard.style.padding = "1rem";
+      }
+  }
+    </script>
 </body>
 </html>
