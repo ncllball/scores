@@ -2,6 +2,16 @@
 <html>
 <head>
     <title>NCLL Scores</title>
+    <style>
+        html, body {
+            height: 100%; /* Make html and body fill the entire viewport height */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* remove default padding */
+        }
+        #gc-scoreboard-widget-bf2t {
+            height: 100%; /* Make the widget container fill the body height */
+        }
+    </style>
 </head>
 <body>
     <div id="gc-scoreboard-widget-bf2t"></div>
@@ -11,7 +21,7 @@
         window.GC.scoreboard.init({
             target: "#gc-scoreboard-widget-bf2t",
             widgetId: "1007386e-b9a9-4209-b319-4cbf63cf9c4d",
-            maxVerticalGamesVisible: 19,
+            maxVerticalGamesVisible: 4,
         })
     </script>
 </body>
