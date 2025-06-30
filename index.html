@@ -30,6 +30,22 @@
         })
     </script>
 
+
+    <!-- Put this div wherever you want the widget to be embedded -->
+<div id="gc-schedule-widget-wl7g"></div>
+
+<!-- Put this before the closing </body> tag -->
+<script src="https://widgets.gc.com/static/js/sdk.v1.js"></script>
+<script>
+    window.GC.team.schedule.init({
+        target: "#gc-schedule-widget-wl7g",
+        widgetId: "83907b4a-fd2a-4ea7-a82e-67832645c3ce",
+        maxVerticalGamesVisible: 4,
+    })
+</script>
+
+    
+
     <script>
         window.onload = function(){
             let scoreboard = document.querySelector(".ScoreboardList__scoreboardList");
